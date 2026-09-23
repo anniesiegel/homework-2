@@ -108,12 +108,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="packages" class="level1">
+<h1>Packages</h1>
 <section id="question-1" class="level2">
 <h2 class="anchored" data-anchor-id="question-1">Question 1</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(aRtsy)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>install.packages() will download the package onto your laptop and can be run in the console, but library() must be ran in a code chunk of a document. library() just pulls up the package/opens it in the current document while install.packages() downloads it to your laptop. you cannot use a package until it is downloaded/installed once and opened with libarary everytime you open the document.</p>
+</section>
+<section id="question-2" class="level2">
+<h2 class="anchored" data-anchor-id="question-2">Question 2</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(aRtsy)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The Collatz conjecture is a math problem that says whatever number you have, will always become 1 if you continue to apply the same 2 rules to the number. If the number is even, then you divide it by 2. If the number is odd, than you multiply is by 3, then add 1. Eventually if you continue to do this, your number will become 4, then 2, and finally 1. The collatz conjecture equation looks like <code>F(x) = x/2</code> if x is even The collatz conjecture equation looks like <code>F(x) = 3x + 1</code> if x is odd F(2)</p>
+</section>
 </section>
 
 </main>

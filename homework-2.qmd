@@ -5,6 +5,8 @@ author: "Annie Siegel"
 editor: visual
 ---
 
+# Packages 
+
 ## Question 1 
 
 ```{r}
@@ -12,3 +14,13 @@ editor: visual
 install.packages(aRtsy)
 ```
 install.packages() will download the package onto your laptop and can be run in the console, but library() must be ran in a code chunk of a document. library() just pulls up the package/opens it in the current document while install.packages() downloads it to your laptop. you cannot use a package until it is downloaded/installed once and opened with libarary everytime you open the document. 
+
+## Question 2
+
+```{r}
+library(aRtsy)
+```
+The Collatz conjecture is a math problem that says whatever number you have, will always become 1 if you continue to apply the same 2 rules to the number. If the number is even, then you divide it by 2. If the number is odd, than you multiply is by 3, then add 1. Eventually if you continue to do this, your number will become 4, then 2, and finally 1. 
+The collatz conjecture equation looks like `F(x) = x/2` if x is even 
+The collatz conjecture equation looks like `F(x) = 3x + 1` if x is odd 
+F(2)
