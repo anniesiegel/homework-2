@@ -39,3 +39,20 @@ canvas_collatz(         # opening the function titled canvas_collatz
 - it is a different picture every time you run the code because there was nothing written about if the angle was even, odd, or which side it was on. when you look into the arguments of the help file for this function, you can see all the different arguments the function has, but in the code written we only included the color and n, so everything else may vary every time you run the code. 
 - this could be troublesome because if you don't specify all of the arguments, the ran code might not be exactly what you want. 
 - the set.seed() function can be used to get the same result because it generates numbers that were used previously 
+```{r}
+set.seed(5)
+```
+
+
+## Question 4
+
+```{r}
+canvas_collatz(
+  colors = c("blue"),
+  n = 1:20
+)
+set.seed(1)
+```
+- the difference between this code and the one above is that this runs the function from 1 to 20 rather than just at 10 
+- in this code, the picture that is generated doesn't change every time you render
+- 
