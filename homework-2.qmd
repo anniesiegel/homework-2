@@ -1,0 +1,14 @@
+---
+title: "Homework-2"
+format: html
+author: "Annie Siegel"
+editor: visual
+---
+
+## Question 1 
+
+```{r}
+#| eval: false
+install.packages(aRtsy)
+```
+install.packages() will download the package onto your laptop and can be run in the console, but library() must be ran in a code chunk of a document. library() just pulls up the package/opens it in the current document while install.packages() downloads it to your laptop. you cannot use a package until it is downloaded/installed once and opened with libarary everytime you open the document. 
