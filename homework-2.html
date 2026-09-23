@@ -122,7 +122,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(aRtsy)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>The Collatz conjecture is a math problem that says whatever number you have, will always become 1 if you continue to apply the same 2 rules to the number. If the number is even, then you divide it by 2. If the number is odd, than you multiply is by 3, then add 1. Eventually if you continue to do this, your number will become 4, then 2, and finally 1. The collatz conjecture equation looks like <code>F(x) = x/2</code> if x is even The collatz conjecture equation looks like <code>F(x) = 3x + 1</code> if x is odd F(2)</p>
+<p>The Collatz conjecture is a math problem that says whatever number you have, will always become 1 if you continue to apply the same 2 rules to the number. If the number is even, then you divide it by 2. If the number is odd, than you multiply is by 3, then add 1. Eventually if you continue to do this, your number will become 4, then 2, and finally 1. The collatz conjecture equation looks like <code>F(x) = x/2</code> if x is even The collatz conjecture equation looks like <code>F(x) = 3x + 1</code> if x is odd</p>
+</section>
+<section id="question-3" class="level2">
+<h2 class="anchored" data-anchor-id="question-3">Question 3</h2>
+<section id="a" class="level4">
+<h4 class="anchored" data-anchor-id="a">(A)</h4>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">canvas_collatz</span>(         <span class="co"># opening the function titled canvas_collatz</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"blue"</span>),   <span class="co"># picking the color for the function </span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="dv">10</span>                <span class="co"># picking the number n10</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>)                       <span class="co"># closing the function </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="homework-2_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="b" class="level4">
+<h4 class="anchored" data-anchor-id="b">(B)</h4>
+<ul>
+<li>it is a different picture every time you run the code because there was nothing written about if the angle was even, odd, or which side it was on. when you look into the arguments of the help file for this function, you can see all the different arguments the function has, but in the code written we only included the color and n, so everything else may vary every time you run the code.</li>
+<li>this could be troublesome because if you don’t specify all of the arguments, the ran code might not be exactly what you want.</li>
+<li>the set.seed() function can be used to get the same result because it generates numbers that were used previously</li>
+</ul>
+</section>
 </section>
 </section>
 

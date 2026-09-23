@@ -23,4 +23,19 @@ library(aRtsy)
 The Collatz conjecture is a math problem that says whatever number you have, will always become 1 if you continue to apply the same 2 rules to the number. If the number is even, then you divide it by 2. If the number is odd, than you multiply is by 3, then add 1. Eventually if you continue to do this, your number will become 4, then 2, and finally 1. 
 The collatz conjecture equation looks like `F(x) = x/2` if x is even 
 The collatz conjecture equation looks like `F(x) = 3x + 1` if x is odd 
-F(2)
+
+## Question 3 
+
+#### (A) 
+```{r}
+canvas_collatz(         # opening the function titled canvas_collatz
+  colors = c("blue"),   # picking the color for the function 
+  n = 10                # picking the number n10
+)                       # closing the function 
+```
+
+#### (B) 
+
+- it is a different picture every time you run the code because there was nothing written about if the angle was even, odd, or which side it was on. when you look into the arguments of the help file for this function, you can see all the different arguments the function has, but in the code written we only included the color and n, so everything else may vary every time you run the code. 
+- this could be troublesome because if you don't specify all of the arguments, the ran code might not be exactly what you want. 
+- the set.seed() function can be used to get the same result because it generates numbers that were used previously 
