@@ -1,48 +1,55 @@
 ---
 title: "Homework-2"
-format: html
+format: pdf
 author: "Annie Siegel"
 editor: visual
 ---
 
-# Packages 
+# Packages
 
-## Question 1 
+## Question 1
 
 ```{r}
 #| eval: false
-install.packages(aRtsy)
+install.packages("aRtsy")
 ```
-install.packages() will download the package onto your laptop and can be run in the console, but library() must be ran in a code chunk of a document. library() just pulls up the package/opens it in the current document while install.packages() downloads it to your laptop. you cannot use a package until it is downloaded/installed once and opened with libarary everytime you open the document. 
+
+install.packages() will download the package onto your laptop and can be run in the console, but library() must be ran in a code chunk of a document. library() just pulls up the package/opens it in the current document while install.packages() downloads it to your laptop. you cannot use a package until it is downloaded/installed once and opened with library every time you open the document.
+
+\newpage
 
 ## Question 2
 
 ```{r}
-library(aRtsy)
-```
-The Collatz conjecture is a math problem that says whatever number you have, will always become 1 if you continue to apply the same 2 rules to the number. If the number is even, then you divide it by 2. If the number is odd, than you multiply is by 3, then add 1. Eventually if you continue to do this, your number will become 4, then 2, and finally 1. 
-The collatz conjecture equation looks like `F(x) = x/2` if x is even 
-The collatz conjecture equation looks like `F(x) = 3x + 1` if x is odd 
-
-## Question 3 
-
-#### (A) 
-```{r}
-canvas_collatz(         # opening the function titled canvas_collatz
-  colors = c("blue"),   # picking the color for the function 
-  n = 10                # picking the number n10
-)                       # closing the function 
+library("aRtsy")
 ```
 
-#### (B) 
+The Collatz conjecture is a math problem that says whatever number you have, will always become 1 if you continue to apply the same 2 rules to the number. If the number is even, then you divide it by 2. If the number is odd, than you multiply is by 3, then add 1. Eventually if you continue to do this, your number will become 4, then 2, and finally 1. The collatz conjecture equation looks like `F(x) = x/2` if x is even The collatz conjecture equation looks like `F(x) = 3x + 1` if x is odd
 
-- it is a different picture every time you run the code because there was nothing written about if the angle was even, odd, or which side it was on. when you look into the arguments of the help file for this function, you can see all the different arguments the function has, but in the code written we only included the color and n, so everything else may vary every time you run the code. 
-- this could be troublesome because if you don't specify all of the arguments, the ran code might not be exactly what you want. 
-- the set.seed() function can be used to get the same result because it generates numbers that were used previously 
+$F(x) = x/2$ if x is even 
+$F(x) = 3x+1$ if x is odd 
+
+\newpage
+
+## Question 3
+
+#### (A)
+
 ```{r}
 set.seed(5)
+canvas_collatz(         # opening the function titled canvas_collatz
+  colors = c("blue"),   # picking the color for the function 
+  n = 10                # picking 10 random numbers that will go through the collatz conjecture
+)                       # closing the function 
 ```
+this functionis creating an artisitic representation of the Collatz conjecture and how whatever numbers you have, they will always go down to 1. 
+#### (B)
 
+- it is a different picture every time you run the code because when saying that n=10, you are telling R to chose 10 random numbers to apply the Collatz conjecture to. every time the code runs 10 different numbers are chosen so every image looks different 
+- this could be troublesome because if you are writing an analysis about the picture, then someone reads it they would not be looking at the same picture 
+- the set.seed() function can be used to get the same result because it produces the same state and same numbers for every render
+
+\newpage
 
 ## Question 4
 
@@ -53,6 +60,7 @@ canvas_collatz(
 )
 set.seed(1)
 ```
-- the difference between this code and the one above is that this runs the function from 1 to 20 rather than just at 10 
+
+- the difference between this code and the one above is that this runs the function to produce the same states 1 through 20 every time 
 - in this code, the picture that is generated doesn't change every time you render
-- 
+- it would not be appropriate or needed to include the set seed function into this code chunk because the code already produces the same image every time 
